@@ -31,11 +31,13 @@ export default function Home() {
         ></script>
       </Head>
       <Image src={'/giulia.svg'} width={450} height={200}/>
-      <Image src={'/equation.svg'} width={450} height={40}/>
       <Link href='/heart'>
         <div className={styles.love__wrapper}>
           <Image src={'/I.svg'} width={80} height={200}/>
-          <Heart size={1}/>
+          <div className={styles.heart__wrapper}>
+            <Image src={'/equation.svg'} width={450} height={40}/>
+            <Heart size={1}/>
+          </div>
           <Image src={'/U.svg'} width={100} height={200}/>
         </div>
       </Link>
