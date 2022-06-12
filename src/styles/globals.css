@@ -1,0 +1,64 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: loveFont;
+  src: url(/KaushanScript.ttf);
+  font-size: larger;
+}
+
+h1{
+  font-family: loveFont, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 4rem;
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.heartAnimation {
+  width: 21000%;
+  height: 100%;
+  background-image: url('/frames.svg');
+  background-size: 100%, 100%;
+  background-repeat:no-repeat;
+
+  animation-name: heart-draw;
+  animation-duration: 10s;
+  animation-timing-function: steps(200);
+  animation-iteration-count: infinite;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.heartAnimation__wrapper{
+  overflow: hidden;
+  position: relative;
+  width: 360px;
+  height: 288px;
+}
+
+@keyframes heart-draw {
+  from { 
+    transform: translateX(0); 
+  }
+  to { 
+    transform: translateX(-99.5024875622%); 
+  }
+}
