@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import { useState, useEffect} from 'react'
-//import Heart from "../components/Heart"
+import Heart from "../components/Heart"
 
 import styles from '../styles/Home.module.css'
 
@@ -18,7 +19,7 @@ export default function Home() {
   },[])
 
   return (
-    <main className={styles.main}>
+    <main className='main'>
       <Head>
          <title>Feliz dia dos namorados Giulia!</title>
          <meta name="description" content="Feliz dia dos namorados Giulia!" />
@@ -31,13 +32,13 @@ export default function Home() {
       </Head>
       <Image src={'/giulia.svg'} width={450} height={200}/>
       <Image src={'/equation.svg'} width={450} height={40}/>
-      <div className={styles.love__wrapper}>
-        <Image src={'/I.svg'} width={80} height={200}/>
-        <div className='heartAnimation__wrapper'>
-          <div className='heartAnimation'></div>
+      <Link href='/heart'>
+        <div className={styles.love__wrapper}>
+          <Image src={'/I.svg'} width={80} height={200}/>
+          <Heart/>
+          <Image src={'/U.svg'} width={100} height={200}/>
         </div>
-        <Image src={'/U.svg'} width={100} height={200}/>
-      </div>
+      </Link>
       <div className={styles.photo__wrapper}>
         <Image src={'/photo.jpg'} width={400} height={400}/>
       </div>
