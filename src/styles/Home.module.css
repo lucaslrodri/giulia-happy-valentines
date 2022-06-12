@@ -3,7 +3,9 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   align-content: center;
+  margin-top: 10px;
 }
 
 .photo__wrapper{

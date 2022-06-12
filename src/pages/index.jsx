@@ -35,7 +35,7 @@ export default function Home() {
       <Link href='/heart'>
         <div className={styles.love__wrapper}>
           <Image src={'/I.svg'} width={80} height={200}/>
-          <Heart size={0.8}/>
+          <Heart size={1}/>
           <Image src={'/U.svg'} width={100} height={200}/>
         </div>
       </Link>
